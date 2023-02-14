@@ -1,3 +1,9 @@
+/* eslint-disable */
+
+// временное решение проблемы с react-image-file-resizer и Vite. Через npm модули, пакет с Vite не работает
+
+// TODO: заменить это решение на canvas (где делать кроп, уменьшать размер и превью)
+
 /**
  *
  * @author Onur Zorluer

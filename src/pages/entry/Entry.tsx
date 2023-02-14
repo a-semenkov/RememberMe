@@ -64,7 +64,7 @@ function Entry() {
       setLoading(true);
       let imageForUpload = imageUpload;
       const minifiedImage = await createPreview(imageUpload);
-      console.log(minifiedImage);
+
       if (imageUpload.size > 1500000)
         imageForUpload = await resizeImage(imageUpload);
 
@@ -87,7 +87,7 @@ function Entry() {
       setLoading(false);
     } catch (e: unknown) {
       setLoading(false);
-      console.log(e);
+
       // Этот блок относится только к resizeImage, обработка ошибки обращения к БД находится в редаксе
       toast.error('Ошибка обработки изображения');
     }

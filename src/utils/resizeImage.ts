@@ -1,7 +1,3 @@
-// import Resizer from 'react-image-file-resizer';
-
-// const resizer: typeof Resizer = (Resizer.default || Resizer);
-
 import { createResizedImage } from './fileResizer/fileResizer';
 
 export function createPreview(image: File) {
@@ -14,7 +10,6 @@ export function createPreview(image: File) {
       30,
       0,
       (uri) => {
-        console.log(uri);
         resolve(uri as File);
       },
       'file'
@@ -34,7 +29,6 @@ export function resizeImage(image: File) {
       90,
       0,
       (uri) => {
-        console.log(uri);
         resolve(uri as File);
       },
       'file'
