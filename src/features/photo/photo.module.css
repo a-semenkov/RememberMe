@@ -1,0 +1,53 @@
+.wrapper {
+  width: var(--photo-entry-size);
+  height: var(--photo-entry-size);
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 2rem;
+}
+.dropzone {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  height: 100%;
+  background-image: url('/src/assets/svg/addPicture.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.dropzone p {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.previewWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.previewWrapper:hover .backdropImage {
+  opacity: 1;
+}
+.previewWrapper:hover .preview {
+  filter: blur(2px);
+  transform: scale(1.2);
+}
+
+.preview {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.backdropImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  width: 30%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}

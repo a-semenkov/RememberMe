@@ -1,0 +1,29 @@
+.app {
+  display: grid;
+  grid-template-columns: 20% 50% 1fr;
+  gap: 1rem;
+  position: relative;
+  margin: 0 auto;
+  padding: var(--parent-padding);
+  height: 670px;
+  max-width: var(--container-width);
+  background: var(--background-parent);
+  -webkit-backdrop-filter: var(--background-parent-blur);
+  backdrop-filter: var(--background-parent-blur);
+  border: var(--parent-border);
+  border-radius: var(--parent-border-radius);
+}
+
+.main,
+.left,
+.right {
+  padding: var(--child-padding);
+  background: var(--background-child);
+  border: var(--child-border);
+  border-radius: var(--child-border-radius);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}

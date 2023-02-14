@@ -1,0 +1,39 @@
+.entry {
+  --width: calc(var(--photo-entry-size) + (var(--padding) * 2));
+  --padding: 20px;
+  position: relative;
+  margin: 0 auto;
+  width: var(--width);
+  padding: 60px var(--padding) var(--padding);
+  background-color: #ffffff;
+  border-radius: 2rem;
+  position: relative;
+  height: 100%;
+  /* height: calc(var(--width) * 1.4); */
+  -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+  -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+}
+
+.date {
+  position: absolute;
+  font-family: var(--font-handwriting);
+  font-size: 3rem;
+  top: 0;
+  transform: rotate(-10deg);
+}
+
+.caption {
+  margin-top: 40px;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  border: none;
+  resize: none;
+  font-family: var(--font-handwriting);
+  font-size: 18px;
+  line-height: 30px;
+  overflow: hidden;
+  text-align: center;
+}

@@ -1,0 +1,5 @@
+.about_wrapper {
+  height: 500px;
+  padding: 10px;
+  overflow-y: scroll;
+}

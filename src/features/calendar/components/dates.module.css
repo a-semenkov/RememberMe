@@ -1,0 +1,80 @@
+.dates {
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.dateItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  text-decoration: none;
+  color: inherit;
+  user-select: none;
+  animation: fade 0.1s ease-in-out;
+}
+
+.today {
+  color: var(--light-color);
+  background-color: var(--error-color);
+  border-radius: 50%;
+}
+
+.outOfRangeMonth {
+  color: grey;
+}
+
+.futureDate {
+  color: lightgray;
+  pointer-events: none;
+}
+
+.selected {
+  border: 4px solid var(--aux-color);
+
+  pointer-events: none;
+  border-radius: 50%;
+  /* color: white; */
+}
+
+.active_entry {
+  color: white;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    var(--aux-color),
+    var(--secondary-color)
+  );
+}
+
+@keyframes rollout {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rollup {
+  0% {
+    transform: translateY(-55%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 1;
+  }
+}

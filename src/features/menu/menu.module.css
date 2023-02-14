@@ -1,0 +1,60 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+  height: 100%;
+}
+
+.item {
+  position: relative;
+  padding: 0.5rem;
+  display: flex;
+
+  cursor: pointer;
+}
+
+.item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item:last-child {
+  margin-top: auto;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.item:hover {
+  /* padding: 5px; */
+  border-radius: 10px;
+  background-color: var(--light-color);
+}
+
+/* TODO : эффект при наведении */
+
+/* .item:hover::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  right: -20px;
+  top: 0;
+  border-radius: 0 20px;
+  border-radius: 10px;
+  background-color: var(--light-color);
+} */
+
+.icon {
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 100%;
+  height: 1.9rem;
+  width: 1.9rem;
+  margin-right: 1rem;
+}
+
+/* .icon use {
+  margin-right: 20px;
+} */

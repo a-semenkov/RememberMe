@@ -1,0 +1,86 @@
+:root {
+  --font-family: 'Nunito', sans-serif;
+  --font-handwriting: 'Bad Script', cursive;
+
+  --content-width: 1230px;
+  --container-offset: 5vh;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --photo-entry-size: 350px;
+
+  --primary-color: #0e0114;
+  --light-color: #fff;
+  --secondary-color: #894be6;
+  --aux-color: #d77ddb;
+  --error-color: #9e2d51;
+  --background-grandient: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+
+  /* Parent block styles */
+  --parent-padding: 4rem;
+  --background-parent: rgba(255, 255, 255, 0.5);
+  --background-parent-blur: blur(10px);
+  --parent-border: 1px solid rgba(255, 255, 255, 0.9);
+  --parent-border-radius: 50px;
+
+  /* Child block styles */
+  --child-padding: 2rem;
+  --background-child: rgba(255, 255, 255, 0.5);
+  --background-child-blur: blur(10px);
+  --child-border: 1px solid rgba(255, 255, 255, 1);
+  --child-border-radius: 20px;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  display: grid;
+  overflow: hidden;
+  align-items: center;
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  background: var(--background-grandient);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  padding: 0 var(--container-offset);
+}
+
+.btn_primary {
+  cursor: pointer;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn_primary:hover {
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
+}

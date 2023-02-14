@@ -1,0 +1,35 @@
+.card {
+  width: 150px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+
+  justify-content: space-between;
+  height: 250px;
+  border: 2px solid var(--aux-color);
+  border-radius: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  -webkit-box-shadow: 4px 3px 10px 3px #dddddd;
+  -moz-box-shadow: 4px 3px 10px 3px #dddddd;
+  box-shadow: 4px 3px 10px 3px #dddddd;
+}
+
+.card a {
+  text-decoration: none;
+  height: 100%;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.svgIcon {
+  width: 100%;
+  object-fit: cover;
+}
+.caption {
+  margin: 0;
+}
