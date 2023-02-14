@@ -64,7 +64,7 @@ function Entry() {
       setLoading(true);
       let imageForUpload = imageUpload;
       const minifiedImage = await createPreview(imageUpload);
-
+      console.log(minifiedImage);
       if (imageUpload.size > 1500000)
         imageForUpload = await resizeImage(imageUpload);
 

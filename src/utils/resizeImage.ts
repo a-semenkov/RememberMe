@@ -10,6 +10,7 @@ export function createPreview(image: File) {
       30,
       0,
       (uri) => {
+        console.log(uri);
         resolve(uri as File);
       },
       'base64'
@@ -29,6 +30,7 @@ export function resizeImage(image: File) {
       90,
       0,
       (uri) => {
+        console.log(uri);
         resolve(uri as File);
       },
       'base64'
