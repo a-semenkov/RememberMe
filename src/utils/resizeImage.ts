@@ -12,7 +12,7 @@ export function createPreview(image: File) {
       (uri) => {
         resolve(uri as File);
       },
-      'file'
+      'base64'
     );
   });
 
@@ -31,7 +31,7 @@ export function resizeImage(image: File) {
       (uri) => {
         resolve(uri as File);
       },
-      'file'
+      'base64'
     );
   });
 

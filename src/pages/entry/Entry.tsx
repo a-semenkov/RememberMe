@@ -86,8 +86,9 @@ function Entry() {
 
       setLoading(false);
     } catch (e: unknown) {
+      setLoading(false);
       // Этот блок относится только к resizeImage, обработка ошибки обращения к БД находится в редаксе
-      toast('ошибка загрузки изображения');
+      toast.error('Ошибка обработки изображения');
     }
   };
 
