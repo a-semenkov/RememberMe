@@ -1,8 +1,12 @@
-import Resizer from 'react-image-file-resizer';
+// import Resizer from 'react-image-file-resizer';
+
+// const resizer: typeof Resizer = (Resizer.default || Resizer);
+
+import { createResizedImage } from './fileResizer/fileResizer';
 
 export function createPreview(image: File) {
   const result = new Promise<Awaited<File>>((resolve) => {
-    Resizer.imageFileResizer(
+    createResizedImage(
       image,
       300,
       300,
@@ -13,7 +17,7 @@ export function createPreview(image: File) {
         console.log(uri);
         resolve(uri as File);
       },
-      'base64'
+      'file'
     );
   });
 
@@ -22,7 +26,7 @@ export function createPreview(image: File) {
 
 export function resizeImage(image: File) {
   const result = new Promise<Awaited<File>>((resolve) => {
-    Resizer.imageFileResizer(
+    createResizedImage(
       image,
       1920,
       1080,
@@ -33,7 +37,7 @@ export function resizeImage(image: File) {
         console.log(uri);
         resolve(uri as File);
       },
-      'base64'
+      'file'
     );
   });
 
