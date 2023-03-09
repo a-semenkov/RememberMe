@@ -19,6 +19,8 @@ Web app to track your habbits and save your memories.
 FrontEnd: React + Typescript
 State-manager: Redux (RTK)
 Fetch: RTK Query
+Анимации: Framer Motion
+Прочее: React hook form, Canvas API
 Backend: Google Firebase + Google Firestore
 
 
